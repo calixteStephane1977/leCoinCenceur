@@ -17,8 +17,8 @@
                     <span>{{ (product.price / 100)|number_format(2,',','.') }} €</span>
                     </div>
                     <div class="row d-flex h-25 border justify-content-evenly text position-relative bottom-0 ">
-                    <a href="{{ path('ajouterPanier', { 'id' : product.id }) }}" class=" col-2 btn btn-success d-flex justify-content-center align-items-center">+</a>
-                    <a href="{{ path('supprimerPanier', { 'id' : product.id }) }}" class="col-2 btn btn-primary d-flex justify-content-center align-items-center">-</a>
+                    <a href="{{ path('ajouterPanier', { 'id' : product.id }) }}" class=" col-2 btn btn-success d-flex justify-content-center align-items-center">Ajouter</a>
+                    
                     </div>
                 </div>                
             {% endfor %}
