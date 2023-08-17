@@ -1,13 +1,15 @@
 .carousel-inner {
     height: 300px;
 }
+
 .carousel-inner.banner {
     display: flex;
     align-items: center;
 }
-.carousel-item{
+
+.carousel-item {
     top: 50%;
-    transform: translate(10px,10px);
+    transform: translate(10px, 10px);
 }
 
 .page-container {
@@ -78,5 +80,22 @@
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark {
-    background-color: grey;
+    /* background-color: rgba(0, 0, 0, 0.228); */
+    background-color: transparent;
+}
+
+.h-100 {
+    background-color: #16182c;
+}
+
+img.img-fluid.img-thumbnail.rounded {
+    height: 120px;
+    width: 100px;
+}
+
+.navBar {
+    color: white;
+}
+.fs-6{
+    color: white;
 }
