@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catalogue{% endblock %}
+
+{% block body %}
+<div class="row text-center">
+    <div class="col-sm-9">
+        <div class="row mt-5">        
+            <div class="col-md-8">
+                <img class="img-fluid img-thumbnail rounded" alt="oups" src="/images/products/{{ product.image }}">
+            </div>
+            <div class="col-md-4">
+                <span>{{ product.name }}</span>
+                <br>
+                <span>{{ product.subtitle }}</span>
+                <br>
+                <span>{{ product.description }}</span>
+                <br>
+                <span>{{ (product.price / 100)|number_format(2,',','.') }} €</span>
+                <br>
+                <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

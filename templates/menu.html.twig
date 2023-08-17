@@ -1,0 +1,68 @@
+
+<div class="banner text-center">
+{%include 'carouselText.html.twig'%}
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark text-danger >
+    <div class="container-fluid">
+        <a class="navbar-brand fs-6" href="{{ path('accueil') }}">Mon coin censeur</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link active fs-6" href="{{ path('catalogue') }}">
+                    Catalogue
+                    <span class="visually-hidden">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-6 active" href="{{ path('admin') }}">
+                    Administration
+                    <span class="visually-hidden">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link fs-6" href="#">A propos</a>
+            </li>
+            <!-- Menu item déroulant -->
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li> -->
+        </ul>
+        {# <form class="d-flex">
+            <input class="form-control me-sm-2" type="text" placeholder="ma recherche">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Rechercher</button>
+        </form> #}
+        {% if app.user %}
+            <div class="fs-6">
+                <small class="mx-5">Bonjour {{ app.user.lname }}</small>
+                <a href="{{ path('compte') }}" class="text-white fs-6"><i class="fas fa-user-check"></i></a>
+                <span class="text-white"> | </span>
+                <a href="{{ path('app_logout') }}" class="text-white fs-6"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            {% else %}
+            <a href="{{ path('app_login') }}" class="text-white fs-6"><i class="fas fa-user"></i></a>
+            <span class="text-white"> | </span>
+            <a href="{{ path('inscription') }}" class="text-white fs-6"><i class="fas fa-spell-check"></i></a>
+        {% endif %}
+        <a href="{{ path('panier') }}" class="text-white fs-4 mx-3">
+            <i class="fas fa-shopping-basket">
+                <span class="badgeNB position-absolute translate-middle badge rounded-pill bg-info">{{ monPanier.nbArticles() }}</span>
+            </i>
+        </a>
+        </div>
+    </div>
+</nav> 

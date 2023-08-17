@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catalogue{% endblock %}
+
+{% block body %}
+<div class="row text-center border ">
+    <div class="col-sm-9 border ">
+        <div class="row mt-5">   
+            {% for product in products %}
+                <div class="col-md-4 border">
+                    <a href="{{ path('product', { 'id' : product.id }) }}">
+                        <img class="img-fluid img-thumbnail rounded" alt="oups" src="/images/products/{{ product.image }}">
+                    </a>
+                    <br>
+                    <div class="d-flex flex-column border">
+                    <span>{{ product.name }}</span>
+                    <span>{{ (product.price / 100)|number_format(2,',','.') }} €</span>
+                    </div>
+                    <div class="row d-flex h-25 border justify-content-evenly text position-relative bottom-0 ">
+                    <a href="{{ path('ajouterPanier', { 'id' : product.id }) }}" class=" col-2 btn btn-success d-flex justify-content-center align-items-center">+</a>
+                    <a href="{{ path('supprimerPanier', { 'id' : product.id }) }}" class="col-2 btn btn-primary d-flex justify-content-center align-items-center">-</a>
+                    </div>
+                </div>                
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
