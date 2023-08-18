@@ -7,18 +7,18 @@
     <div class="col-sm-9  ">
         <div class="row mt-5">   
             {% for product in products %}
-                <div class="col-md-4 bg-white rounded-2 me-4 p-3 position-relative">
+                <div style='box-shadow:1px 1px 13px 0px #ff7629 ' class="card_catalogue col-md-4 bg-white m-4 p-3 position-relative ">
                     <a href="{{ path('product', { 'id' : product.id }) }}">
-                        <img class="img-fluid img-thumbnail h-50 w-50" alt="oups" src="/images/products/{{ product.image }}">
+                        <img class="img-fluid img-thumbnail h-50 w-100" alt="oups" src="/images/products/{{ product.image }}">
                     </a>
                     <br>
-                    <div class="d-flex flex-column  ">
-                    <span>{{ product.name }}</span>
-                    <span>{{ (product.price / 100)|number_format(2,',','.') }} €</span>
-                    </div>
-                    <div class="row d-flex h-25  justify-content-evenly text position-relative bottom-0 ">
-                    <a style="background:#ff7629" href="{{ path('ajouterPanier', { 'id' : product.id }) }}" class="position-absolute bottom-0 col-6 rounded-pill h-50 btn  d-flex justify-content-center align-items-center">Ajouter</a>
+                    <div style="height:100px" class="d-flex flex-column mt-4 flex-wrap ">
+                        <span style="color:#ff7629" >{{ product.name }}</span>
+                        <span class="text-black" >{{ (product.price / 100)|number_format(2,',','.') }} €</span>
+                    <div class="w-100 d-flex h-25  justify-content-center  position-absolute bottom-0 p-0 m-0 ">
+                    <a style="background:#ff7629" href="{{ path('ajouterPanier', { 'id' : product.id }) }}" class="btn-submit position-absolute bottom-0 col-6 rounded-pill h-25 btn  d-flex justify-content-center align-items-center mb-3 ">Ajouter</a>
                     
+                    </div>
                     </div>
                 </div>                
             {% endfor %}

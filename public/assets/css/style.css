@@ -88,14 +88,19 @@ nav.navbar.navbar-expand-lg.navbar-dark {
     background-color: #16182c;
 }
 
-img.img-fluid.img-thumbnail.rounded {
+/* img.img-fluid.img-thumbnail.rounded {
     height: 120px;
     width: 100px;
-}
+} */
 
 .navBar {
     color: white;
 }
-.fs-6{
+
+.fs-6 {
     color: white;
+}
+
+.btn-submit:hover {
+    background:blue;
 }
