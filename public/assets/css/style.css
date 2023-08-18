@@ -79,28 +79,12 @@
     font-size: xx-small;
 }
 
-nav.navbar.navbar-expand-lg.navbar-dark {
-    /* background-color: rgba(0, 0, 0, 0.228); */
-    background-color: transparent;
-}
 
 .h-100 {
     background-color: #16182c;
-}
-
-/* img.img-fluid.img-thumbnail.rounded {
-    height: 120px;
-    width: 100px;
-} */
-
-.navBar {
-    color: white;
 }
 
 .fs-6 {
     color: white;
 }
 
-.btn-submit:hover {
-    background:blue;
-}
