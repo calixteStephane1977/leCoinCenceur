@@ -13,9 +13,12 @@
     <div class="col-sm-12  ">
         <div class="row mt-5">   
             {% for product in products %}
+
+
+                <div style='box-shadow:1px 1px 13px 0px #ff7629;height:370px ;width:250px; background:#ff7629; position-relative; top:0;left:0;' class="card_catalogue col-md-4  m-4 mx-auto p-1 ">
                 <div style='box-shadow:1px 1px 13px 0px #ff7629;height:350px ;width:250px; ' class="card_catalogue col-md-4 bg-white m-4 mx-auto p-1 position-relative ">
                     <a href="{{ path('product', { 'id' : product.id }) }}">
-                        <img style="position: relative;top:-49px;left: -65px;"  class="img-fluid img-thumbnail border-0 h-50 w-50" alt="oups" src="/images/products/{{ product.image }}">
+                        <img style="position: relative;top:-32px;left:-64.5px;"  class="img-fluid img-thumbnail border-0 h-50 w-50" alt="oups" src="/images/products/{{ product.image }}">
                     </a>
                     <br>
                     <div style="" class="d-flex flex-column mt-1 flex-wrap ">
@@ -26,7 +29,8 @@
                     
                     </div>
                     </div>
-                </div>                
+                </div> 
+                </div>               
             {% endfor %}
         </div>
     </div>
