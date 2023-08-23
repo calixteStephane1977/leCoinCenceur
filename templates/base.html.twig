@@ -22,11 +22,16 @@
         {% block carousel %}
              
         {% endblock %}
+    
         {# <h6 class="rounded border border-dark bg-info p-2 m-2 text-center ">
             {% block subtitle %} Produits Images-Line{% endblock %}
         </h6> #}
         <div class="container mx-auto fs-6 page-container ">
-            {% block body %}{% endblock %}
+            {% block body %}
+            {%include "acceuil.html.twig"%}
+            
+            
+            {% endblock %}
         </div>
         {% block footer %}
             <footer class="col-12 foot position-fixed  bottom-0">

@@ -4,14 +4,14 @@
 
 {% block body %}
 <div class="row text-center">
-    <div class="col-sm-9 rounded position-absolute top-50 start-50 translate-middle"">
+    <div style=" position:absolute; top:55% ;left:50%;transform:translate(-50%,-50%)">
         <div class="mt-5 d-flex flex-column justify-content-center align-items-center position-relative">        
-            <div style="height:500px; width:50%;" class="col-md-4 text-black bg-white position-relative">
+            <div style="height:700px; width:400px;" class="col-md-4 text-black bg-white position-relative">
 
-                    <div class="col-md-8 position-absolute top-0 start-50 translate-middle">
-                            <img class="img-fluid img-thumbnail rounded" alt="oups" src="/images/products/{{ product.image }}">
+                    <div class="col-md-8 position-absolute top-75 start-50 translate-middle">
+                            <img class="img-fluid img-thumbnail rounded border-0" alt="oups" src="/images/products/{{ product.image }}">
                     </div>
-                    <div style="color:#ff7629;position:absolute; top:120px; left:50%;transform:translate(-50%)">
+                    <div style="color:#ff7629;position:absolute; top:140px; left:50%;transform:translate(-50%);width:100%;">
                         <span class="fs-3">{{ product.name }}</span>
                     </div>
                 <div style="position:absolute; top:60%;left:50%;height:30%;width:100%;transform:translate(-50%,-50%)">
@@ -23,10 +23,14 @@
                             <br>
                     </div>
                 </div>
-                <div class="w-100  position-absolute bottom-0 start-50 translate-middle">
-                    <span class="w-25 fs-5 fw-bold ">{{ (product.price / 100)|number_format(2,',','.') }} €</span>
+                <div class="w-100  position-absolute bottom-0 start-50 translate-middle  ">
+                    <span class="m-0">
+                        <h3 class="  fw-bold  text-center ">
+                            {{ (product.price / 100)|number_format(2,',','.') }} €
+                        </h3>
+                        </span>
                     <br>
-                    <a  style=" background-color:#ff7629"href="#" class="btn mt-2 ">Ajouter au panier</a>
+                    <a  style=" background-color:#ff7629" href="#" class="btn rounded-pill ">Ajouter au panier</a>
                 
                 </div>
             </div>
