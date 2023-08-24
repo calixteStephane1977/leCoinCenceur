@@ -8,10 +8,28 @@
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
             {# <link href="{{ asset('assets/css/all.min.css') }}" rel="stylesheet"> #}
             <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+            <link href="{{ asset('assets/css/animationAcceuil.css') }}" rel="stylesheet">
         {% endblock %}
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>           
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script>
         {% block javascripts %}
             <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+            <script src="{{ asset('assets/js/animation.js') }}"></script>
+            <script src="{{ asset('assets/js/gsap.core.js') }}"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js" integrity="sha512-VhCNuqzYKIhOU4i+EWPomIQu3AJ8Q2HmuemubIOUHd6m6ohnHynRxBp8Jl/f8xmVEPiKtpKWuacuBeh49SBfCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--
+MorphSVGPlugin.min.js, and SplitText.min.js are Club GreenSock perks which are not available on a CDN. Download them from your GreenSock account and include them locally like this:
+
+<script src="/[YOUR_DIRECTORY]/MorphSVGPlugin.min.js"></script>
+<script src="/[YOUR_DIRECTORY]/SplitText.min.js"></script>
+
+Sign up at https://greensock.com/club or try them for free on CodePen or CodeSandbox
+-->
         {% endblock %}
         {% block jsStripe %}{% endblock %}
     </head>
