@@ -94,18 +94,12 @@ div#carouselExampleIndicators {
 .badgeNB {
     font-size: xx-small;
 }
-
-
 .h-100 {
     background-color: #16182c;
 }
-
 .fs-6 {
     color: white;
 }
-
-
-
 .mosaique {
     display: flex;
     flex-direction: column;
@@ -116,7 +110,6 @@ div#carouselExampleIndicators {
 
 
 }
-
 .group_mosaique {
     display: flex;
     position: relative;
@@ -154,7 +147,6 @@ span.survol{
     font-size: 0.2em;
     
 }
-
 .image1 {
     /* width:300px; */
     background: url("../../images/products/132357-large.jpg");
@@ -172,7 +164,6 @@ span.survol{
 
     /* height: 200px; */
 }
-
 .image3 {
     background-image: url("../../images/products/145124-large.jpg");
     background-repeat: no-repeat;
@@ -182,7 +173,6 @@ span.survol{
 
     /* height: 200px; */
 }
-
 .image4 {
     background-image: url("../../images/products/99095-large.jpg");
     background-repeat: no-repeat;
@@ -192,7 +182,6 @@ span.survol{
 
     /* height: 200px; */
 }
-
 .image5 {
     background-image: url("../../images/products/99098-large.jpg");
     background-repeat: no-repeat;
@@ -202,7 +191,6 @@ span.survol{
 
     /* height: 200px; */
 }
-
 .image6 {
     background-image: url("../../images/products/99101-large.jpg");
     background-repeat: no-repeat;
@@ -212,7 +200,6 @@ span.survol{
 
     /* height: 200px; */
 }
-
 .image:hover {
     transform: scale(1.4);
     transition:all 0.4s ease-in-out;
@@ -225,7 +212,6 @@ span.survol{
     /* animation: hover 1s ease-out; */
 
 }
-
 .article_acceuil{
     column-rule: red;
 }
@@ -235,6 +221,8 @@ span.survol{
 
 }
 #article2{
+    display: flex;
+    justify-content: space-around;
     margin:0 auto;
     height: 150vh;
 
@@ -253,69 +241,126 @@ span.survol{
 .img_love {
     position: relative;
     background-image: url("../../images/products/LovePhilter_Splash.jpg");
-    /* background-size: 150px; */
     background-size: cover;
     height: 150px;
     width: 300px;
+    z-index: 2000;
+    cursor: pointer;
+   
 }
+
 .img_slicex {
     position: relative;
     background-image: url("../../images/products/slicex_splash.jpg");
-    /* background-size: 150px; */
     background-size: cover;
     height: 150px;
     width: 300px;
+    z-index: 2000;
+    cursor: pointer;
+   
 }
 
 .img_flkey {
     position: relative;
     background-image: url("../../images/products/FLkey.jpg");
-    /* background-size: 150px; */
     background-size: cover;
     height: 150px;
     width: 300px;
+    z-index: 2000;
+    cursor: pointer;
+   
+  
 }
 .img_flkey::after{
-    content:" rrrr";
+    content: "Novation FLkey 49 and 61 Are Here FREE PLUGGING include on all Package ";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    color: black;
-    bottom:-226px;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    color: white;
+    top: 151px;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: white;
-    /* z-index: 2000; */
+    height: 0px;
+    background-color: rgb(76 72 140);
+    overflow: hidden;
 }
 .img_love::after{
-    content:" rrrr";
+    content: "FL STUDIO | Love FREE PLUGGING include on all Package ";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    color: black;
-    bottom:-226px;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    color: white;
+    top: 151px;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: white;
+    height: 0;
+    background-color: #724a59;
+    overflow: hidden;
     /* z-index: 2000; */
 }
 .img_slicex::after{
-    content:" rrrr";
+    content: "FL STUDIO | Slicex FREE PLUGGING include on all Package ";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     color: white;
-    bottom:-226px;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 151px;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: white;
+    height: 0;
+    background-color: #89457a;
+    overflow: hidden;
    
+}
+.img_love:hover::after{
+    height: 100%;
+    transition: 0.4s ;
+    border-radius: 0px 0px 5px 5px ;
+    
+}
+.img_love:hover{
+    box-shadow: 1px 1px 23px 1px #724a59;
+    transition: 0.4s ;
+    
+    
+}
+.img_flkey:hover::after{
+    height: 100%;
+    transition: 0.4s ;
+    border-radius: 0px 0px 5px 5px ;
+}
+.img_flkey:hover{ 
+    box-shadow: 1px 1px 23px 1px rgb(76 72 140);
+    transition: 0.4s ;
+}
+.img_slicex:hover::after{
+    height: 100%;
+    transition: 0.4s ;
+    border-radius: 0px 0px 5px 5px ;
+}
+.img_slicex:hover{
+
+    box-shadow: 1px 1px 23px 1px #89457a;
+    transition: 0.4s ;
+
 }
 /* ============================================================ */
 .Daw{
     background-color: white;
-    z-index: 2000;
+    /* z-index: 2000; */
 }
+.pourLesMusicien{
+    width:300px;
+    height: 100%;
+}
+.compositeur{
+    width:300px;
+    height: 100%;
+}
+
 /* .image>span {
     font-size: 1em;
 } */
