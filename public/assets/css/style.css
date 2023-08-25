@@ -1,3 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+
+div#carouselExampleIndicators {
+    position: relative;
+    top: 50px;
+    margin-bottom: 200px;
+}
+.carouselExampleIndicators{
+    width: 100%;
+}
 .carousel-inner {
     height: 300px;
 }
@@ -89,13 +104,7 @@
     color: white;
 }
 
-/* .fs-6:hover{
-    color: orange;
-} */
-article img#img1:hover {
-    cursor: pointer;
-    background: #000;
-}
+
 
 .mosaique {
     display: flex;
@@ -118,7 +127,12 @@ article img#img1:hover {
     margin: 10px;
     /* border: 1px solid white; */
 }
-
+span.survol{
+        /* border: 1px solid; */
+        overflow: hidden;
+        width: 161px;
+        font-size: 0;
+}
 .image {
     position: relative;
     top: -50px;
@@ -137,6 +151,7 @@ article img#img1:hover {
     /* vertical-align: middle; */
     /* transition: 1.2s; */
     margin:5px;
+    font-size: 0.2em;
     
 }
 
@@ -203,10 +218,14 @@ article img#img1:hover {
     transition:all 0.4s ease-in-out;
     /* width: 100%; */
     /* height: 120%; */
-    font-size: 2.2em;
+    font-size: 0.9em;
+
     opacity: 0.4;
     /* transition: background-size 1.2s; */
+    /* animation: hover 1s ease-out; */
+
 }
+
 .article_acceuil{
     column-rule: red;
 }
@@ -217,10 +236,86 @@ article img#img1:hover {
 }
 #article2{
     margin:0 auto;
-    height: 200vh;
+    height: 150vh;
 
 }
 
+/* ====================================================== */
+#article_love{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 100vh;
+
+    width: 100%;
+}
+
+.img_love {
+    position: relative;
+    background-image: url("../../images/products/LovePhilter_Splash.jpg");
+    /* background-size: 150px; */
+    background-size: cover;
+    height: 150px;
+    width: 300px;
+}
+.img_slicex {
+    position: relative;
+    background-image: url("../../images/products/slicex_splash.jpg");
+    /* background-size: 150px; */
+    background-size: cover;
+    height: 150px;
+    width: 300px;
+}
+
+.img_flkey {
+    position: relative;
+    background-image: url("../../images/products/FLkey.jpg");
+    /* background-size: 150px; */
+    background-size: cover;
+    height: 150px;
+    width: 300px;
+}
+.img_flkey::after{
+    content:" rrrr";
+    position: absolute;
+    color: black;
+    bottom:-226px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* z-index: 2000; */
+}
+.img_love::after{
+    content:" rrrr";
+    position: absolute;
+    color: black;
+    bottom:-226px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* z-index: 2000; */
+}
+.img_slicex::after{
+    content:" rrrr";
+    position: absolute;
+    color: white;
+    bottom:-226px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+   
+}
+/* ============================================================ */
+.Daw{
+    background-color: white;
+    z-index: 2000;
+}
 /* .image>span {
     font-size: 1em;
 } */

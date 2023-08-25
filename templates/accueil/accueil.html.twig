@@ -6,9 +6,14 @@
 {% block body %}
 
 
-	<article  class="d-flex  flex-column justify-content-center align-items-center">
-		<img class="m-5"  src="images/products/FLStudio21.1.jpg" alt="">
-		<div id="article" class="mt-5 w-50 ">
+	<article id="article" class="d-flex  flex-column justify-content-center align-items-center">
+		<img class="m-5 w-75"  src="images/products/FLStudio21.1.jpg" alt="">
+
+
+
+
+	</article>
+		<article id="article" class="mt-5 w-50 ">
 			<h5 class="m-5" style="color:#ff7629">FL STUDIO 21.1 |</h5>
 			<p>
 			Nous sommes ravis de la sortie de FL Studio 21.1.
@@ -38,13 +43,12 @@
 			
 			
 																																	             
-		</div>
+		</article>
 
-
-		<div id="article2" class="mt-5 w-100 d-flex flex-column mx-auto ">
+		<article id="article" class="mt-5 w-100 d-flex flex-column mx-auto ">
 			<h5 class="text-center">Quoi de neuf dans FL STUDIO 21.1</h5>
 			<div class="mt-5 w-100 d-flex justify-content-center ">
-			<div  class="article_acceuil  col-3 m-2 border-start ps-3">
+			<div  class="article_acceuil  col-4 m-2  ps-3">
 				<h5 style="color:#ff7629">FL Studio</h5>
 
 				<div>
@@ -70,7 +74,7 @@
 
 			</div>
 
-			<div class="article_acceuil   col-3 m-2 border-start ps-3">
+			<div id="article"class="article_acceuil   col-4 m-2  ps-3">
 				<h5 style="color:#ff7629" class="ml3">Piano roll</h5>
 				<div>
 
@@ -86,7 +90,7 @@
 				</div>
 
 			</div>
-			<div class="article_acceuil  col-3 m-2 border-start ps-3">
+			<div class="article_acceuil  col-3 m-2  ps-3">
 
 				<h5 style="color:#ff7629">Piano roll</h5>
 				<div>
@@ -109,36 +113,48 @@
 				</div>
 			</div>
 			</div>
-		</div>
+		</article>
 
-	</article>
-		<article id="article" class=" p-3 my-5">
-			<h5 class="text-center mb-5">FL STUDIO | Conçu pour le musicien en vous</h5>
+
+		<article id="article2" class=" p-3 mb-5">OOOOOOOOO
+			<div class="fs-4 mb-5">
+			<h3 class="text-info fw-bold">FL STUDIO |</h3> 
+			 <p>Conçu pour</p> 
+			 <div>
+			  <span class="text-primary"> le Musicien</span>
+			   en vous <span class="fs-4 fw-bolder">!</span> 
+			 </div> 
+			 </div>
 			<div class="d-flex justify-content-center align-items-center" >
-					<p>Avec plus de 25 ans de développement continu, FL STUDIO est devenu le 
+					<span class="col-3 me-4 fs-4">Avec plus de 25 ans de développement continu, FL STUDIO est devenu le 
 						« moyen le plus rapide de votre cerveau à vos enceintes » pour bon nombre des meilleurs DJ
 						et producteurs du monde. De l'utilisation de l'essai FL Studio dans leur chambre
 						à l'atterrissage sur les plus grandes scènes du monde. Est-ce votre tour ? 
 						Notre version d'essai vous permet de créer et d'enregistrer des projets, 
 						puis de les exporter vers des formats audio comme MP3 et WAV, 
 						à être partagés avec le monde. Jusqu’où FL Studio vous mènera-t-il ?
-					</p>
-					<img class="col-6" src="images\products\flstudio-powerUser-image-cloud.png" alt="">
+					</span>
+					<img class="col-9" src="images\products\flstudio-powerUser-image-cloud.png" alt="">
 			</div>
 		</article>
 
-	<article id="article" class="col-12  d-flex align-items-center m-5">
-		<img class="w-50" src="images/products/155226-large.jpg" alt="">
-		<p style="font-size:1.5em" class="col-4 text-start mx-auto ">
+	<article id="article " class="col-12  d-flex align-items-center mx-auto flex-wrap " >
+		<img class="w-50 m-2" src="images/products/155226-large.jpg" alt="">
+		<p style="font-size:1.5em" class="w-25 text-start mx-auto ">
 			En tant que compositeur, ma tâche la plus difficile est de traduire les idées de ma tête dans un DAW.
 																																	              Fruty-loops se sent comme une extension de mon cerveau et me permet de créer facilement la musique de mon imagination.
 		</p>
 	</article>
-	<article id="article" class="d-flex flex-column justify-content-center align-items-center ">
+	<article id="article_love" class="d-flex flex-column justify-content-center align-items-center ">
 		<div class="d-flex w-100 justify-content-around  ">
-			<img src="images/products/LovePhilter_Splash.jpg" alt="">
-			<img src="images/products/slicex_splash.jpg" alt="">
-			<img src="images/products/FLkey.jpg" alt="">
+		<div class="img_love">
+		love
+		</div>
+		<span class="img_slicex" ></span>
+		<span class="img_flkey"></span>
+			{# <img  class="img_love" src="images/products/LovePhilter_Splash.jpg" alt="">
+			<img  class="img_slicex" src="images/products/slicex_splash.jpg" alt="">
+			<img  class="img_flkey" src="images/products/FLkey.jpg" alt=""> #}
 
 		</div>
 		<p class="mt-5 w-50"></p>
@@ -146,22 +162,22 @@
 	</article>
 
 
-	<article  class="mosaique">
+	<article  class="col-12 mosaique">
 		<h3 style="font-size:2.5em; font-weight:bold" class="mb-5">Le monde de Fruty Loops</h3>
 
 
 		<div class="d-flex  flex-column w-100">
 				<div class="d-flex w-100 h-100 ">
 					<div class="group_mosaique  w-50  ">
-						<div class="image image1 " href="#">
-							<span class="survole">Je suis survolé</span>
+						<div class="image image1" href="#">
+							<span class="survole  ">Infected Mushroom parlent de Fruty-Loops <br> et du travail de production</span>
 							{# <img class="test2" style="width:100% ; margin-top:25px" src="images/products/132357-large.jpg" alt=""> #}
 						</div>
 					</div>
 
-					<div class="group_mosaique  w-50 ">
-						<div class="image image2" href="#">
-							<span class="survole">Je suis survolé</span>
+					<div class="group_mosaique  w-50  ">
+						<div class="image image2 " href="#">
+							<span class="survole">Fruty Loops Spotlight avec Nils Frahm</span>
 							{# <img class="test2" style="width:100% ; margin-top:25px" src="images/products/132357-large.jpg" alt=""> #}
 						</div>
 
@@ -169,7 +185,7 @@
 				
 				</div>
 				<div class="d-flex w-100 h-100 ">
-					<div class="group_mosaique  w-25 ">
+					<div class="group_mosaique  w-50 ">
 						<div class="image image3" href="#">
 							<span class="survole">Je suis survolé</span>
 							{# <img class="test2" style="width:100% ; margin-top:25px" src="images/products/132357-large.jpg" alt=""> #}
