@@ -13,11 +13,6 @@
             <link href="{{ asset('assets/css/animationAcceuil.css') }}" rel="stylesheet">
         {% endblock %}
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>           
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js" integrity="sha512-VhCNuqzYKIhOU4i+EWPomIQu3AJ8Q2HmuemubIOUHd6m6ohnHynRxBp8Jl/f8xmVEPiKtpKWuacuBeh49SBfCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         {% block javascripts %}
             <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
@@ -54,7 +49,7 @@ Sign up at https://greensock.com/club or try them for free on CodePen or CodeSan
             {% endblock %}
         </div>
         {% block footer %}
-            <footer class="col-12 foot position-fixed  bottom-0">
+            <footer class="footer col-12 foot position-relative  bottom-0 bg-dark ">
                 <p class="m-0 p-0">
                     &copy; 1912-2023 Compagnie d'arc Jeanne Hachette-Beauvais<br>
                     <small>La plus prestigieuse des compagnies des archers en France</small>

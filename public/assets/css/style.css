@@ -42,7 +42,8 @@ div#carouselExampleIndicators {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: lightblue;
+    background-color:black;
+    color: white;
     padding-top: 25px;
 }
 
@@ -227,6 +228,13 @@ span.survol{
     height: 150vh;
 
 }
+#article3{
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+    height: 400vh;
+
+}
 
 /* ====================================================== */
 #article_love{
@@ -242,8 +250,8 @@ span.survol{
     position: relative;
     background-image: url("../../images/products/LovePhilter_Splash.jpg");
     background-size: cover;
-    height: 150px;
-    width: 300px;
+    height: 180px;
+    width: 350px;
     z-index: 2000;
     cursor: pointer;
    
@@ -253,8 +261,8 @@ span.survol{
     position: relative;
     background-image: url("../../images/products/slicex_splash.jpg");
     background-size: cover;
-    height: 150px;
-    width: 300px;
+    height: 180px;
+    width: 350px;
     z-index: 2000;
     cursor: pointer;
    
@@ -264,8 +272,8 @@ span.survol{
     position: relative;
     background-image: url("../../images/products/FLkey.jpg");
     background-size: cover;
-    height: 150px;
-    width: 300px;
+    height: 180px;
+    width: 350px;
     z-index: 2000;
     cursor: pointer;
    
@@ -362,6 +370,10 @@ span.survol{
 }
 img#logo_acceuil{
 height: 55px;
+}
+.colorOrange{
+color:#ff7629;
+font-size: 1.2em;
 }
 
 /* .image>span {
