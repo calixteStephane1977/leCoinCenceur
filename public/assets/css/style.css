@@ -1,4 +1,5 @@
 body{
+    height: 1500vh;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -28,6 +29,7 @@ div#carouselExampleIndicators {
 }
 
 .page-container {
+    height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 150px;
 }
@@ -39,7 +41,7 @@ div#carouselExampleIndicators {
 
 .foot p {
     text-align: center;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     width: 100%;
     background-color:black;
@@ -375,7 +377,14 @@ height: 55px;
 color:#ff7629;
 font-size: 1.2em;
 }
+/* ================================================================================ */
 
+.card_catalogue{
+    box-shadow:1px 1px 13px 0px #ff7629;
+    height:354px ;
+    width:268px;
+    background:#ff7629;
+}
 /* .image>span {
     font-size: 1em;
 } */
@@ -408,6 +417,19 @@ position: relative;
 nav.navbar{
     width: 100%;
 background-color: #16182c;
-position: fixed;
+position: sticky;
 z-index: 2000;
+}
+
+/* ====================FOOTER============================== */
+
+.footer{
+ position:relative;  
+ bottom: 0;
+ width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.piano-roll{
+width: 300px;
 }

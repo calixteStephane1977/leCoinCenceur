@@ -30,7 +30,7 @@ Sign up at https://greensock.com/club or try them for free on CodePen or CodeSan
         {% endblock %}
         {% block jsStripe %}{% endblock %}
     </head>
-    <body style="background:#16182c"  class=" h-100 ">
+    <body style="background:#16182c"  class="">
         {% block menu %}
             {% include "menu.html.twig" %}
         {% endblock %}
@@ -41,7 +41,7 @@ Sign up at https://greensock.com/club or try them for free on CodePen or CodeSan
         {# <h6 class="rounded border border-dark bg-info p-2 m-2 text-center ">
             {% block subtitle %} Produits Images-Line{% endblock %}
         </h6> #}
-        <div class="container mx-auto fs-6 page-container ">
+        <div class="container mx-auto fs-6 page-container h-100">
             {% block body %}
             {%include "acceuil.html.twig"%}
             
@@ -49,7 +49,7 @@ Sign up at https://greensock.com/club or try them for free on CodePen or CodeSan
             {% endblock %}
         </div>
         {% block footer %}
-            <footer class="footer col-12 foot position-relative  bottom-0 bg-dark ">
+            <footer class="footer">
                 <p class="m-0 p-0">
                     &copy; 1912-2023 Compagnie d'arc Jeanne Hachette-Beauvais<br>
                     <small>La plus prestigieuse des compagnies des archers en France</small>
