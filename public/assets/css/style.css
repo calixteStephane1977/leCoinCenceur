@@ -425,11 +425,15 @@ z-index: 2000;
 
 .footer{
  position:relative;  
+ display: flex;
+ justify-content: center;
+ align-items: center;
  bottom: 0;
  width: 100%;
+ color: white;
     height: 200px;
     background-color: black;
 }
 .piano-roll{
-width: 300px;
+width: 350px;
 }
