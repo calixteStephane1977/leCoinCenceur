@@ -226,13 +226,15 @@ span.survol{
 #article1{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin:0 auto;
     height: 200vh;
 
 }
 #article2{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items:center;
     margin:0 auto;
     height: 300vh;
 
@@ -382,7 +384,8 @@ height: 55px;
 }
 .colorOrange{
 color:#ff7629;
-font-size: 1.2em;
+background:white;
+
 }
 /* ================================================================================ */
 
@@ -391,6 +394,17 @@ font-size: 1.2em;
     height:354px ;
     width:268px;
     background:#ff7629;
+}
+
+/* ============================================ */
+
+
+span#EM6 {
+}
+span[data-em="EM6"]{
+    background:white;
+    font-size:xxx-large;
+
 }
 /* .image>span {
     font-size: 1em;
