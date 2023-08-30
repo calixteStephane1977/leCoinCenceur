@@ -1,19 +1,3 @@
-body{
-    height: 1500vh;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-}
-
-
-div#carouselExampleIndicators {
-    position: relative;
-    top: 50px;
-    margin-bottom: 200px;
-}
-.carouselExampleIndicators{
-    width: 100%;
-}
 .carousel-inner {
     height: 300px;
 }
@@ -29,7 +13,6 @@ div#carouselExampleIndicators {
 }
 
 .page-container {
-    height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 150px;
 }
@@ -41,11 +24,10 @@ div#carouselExampleIndicators {
 
 .foot p {
     text-align: center;
-    /* position: relative; */
+    position: relative;
     bottom: 0;
     width: 100%;
-    background-color:black;
-    color: white;
+    background-color: lightblue;
     padding-top: 25px;
 }
 
@@ -97,364 +79,20 @@ div#carouselExampleIndicators {
 .badgeNB {
     font-size: xx-small;
 }
+
+
 .h-100 {
     background-color: #16182c;
 }
+
 .fs-6 {
     color: white;
 }
-.mosaique {
-    display: flex;
-    flex-direction: column;
 
-    width: 80%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-
-
-}
-.group_mosaique {
-    display: flex;
-    position: relative;
-    /* border: 1px solid yellow; */
-    /* /* width:100%; */
-    height: 300px;
-    overflow: hidden;
-    margin: 10px;
-    /* border: 1px solid white; */
-}
-span.survol{
-        /* border: 1px solid; */
-        overflow: hidden;
-        width: 161px;
-        font-size: 0;
-}
-.image {
-    position: relative;
-    top: -50px;
-    padding: 0;
-    margin: 0;
-    height:100%;
-    width: 100%; 
-    /* display: table-cell; */
-    transform: scale(1.5) ;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    /* width: 100%; */
-    /* height: 300px; */
-    text-align: center;
-    /* vertical-align: middle; */
-    /* transition: 1.2s; */
-    margin:5px;
-    font-size: 0.2em;
-    
-}
-.image1 {
-    /* width:300px; */
-    background: url("../../images/products/132357-large.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.image2 {
-    background: url("../../images/products/115175-large.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-   
-
-    /* height: 200px; */
-}
-.image3 {
-    background-image: url("../../images/products/145124-large.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-
-
-    /* height: 200px; */
-}
-.image4 {
-    background-image: url("../../images/products/99095-large.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-
-
-    /* height: 200px; */
-}
-.image5 {
-    background-image: url("../../images/products/99098-large.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-
-
-    /* height: 200px; */
-}
-.image6 {
-    background-image: url("../../images/products/99101-large.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-
-
-    /* height: 200px; */
-}
-.image:hover {
-    transform: scale(1.4);
-    transition:all 0.4s ease-in-out;
-    /* width: 100%; */
-    /* height: 120%; */
-    font-size: 0.9em;
-
-    opacity: 0.4;
-    /* transition: background-size 1.2s; */
-    /* animation: hover 1s ease-out; */
-
-}
-.article_acceuil{
-    column-rule: red;
-}
-#article{
-    margin:0 auto;
-    height: 100vh;
-
-}
-#article1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:0 auto;
-    height: 200vh;
-
-}
-#article2{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin:0 auto;
-    height: 300vh;
-
-}
-#article3{
-    display: flex;
-    justify-content: space-around;
-    margin:0 auto;
-    height: 400vh;
-
-}
-
-/* ====================================================== */
-#article_love{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    height: 100vh;
-
-    width: 100%;
-}
-
-.img_love {
-    position: relative;
-    background-image: url("../../images/products/LovePhilter_Splash.jpg");
-    background-size: cover;
-    height: 180px;
-    width: 350px;
-    z-index: 2000;
-    cursor: pointer;
-   
-}
-
-.img_slicex {
-    position: relative;
-    background-image: url("../../images/products/slicex_splash.jpg");
-    background-size: cover;
-    height: 180px;
-    width: 350px;
-    z-index: 2000;
-    cursor: pointer;
-   
-}
-
-.img_flkey {
-    position: relative;
-    background-image: url("../../images/products/FLkey.jpg");
-    background-size: cover;
-    height: 180px;
-    width: 350px;
-    z-index: 2000;
-    cursor: pointer;
-   
-  
-}
-.img_flkey::after{
-    content: "Novation FLkey 49 and 61 Are Here FREE PLUGGING include on all Package ";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: white;
-    top: 151px;
-    left: 0;
-    width: 100%;
-    height: 0px;
-    background-color: rgb(76 72 140);
-    overflow: hidden;
-}
-.img_love::after{
-    content: "FL STUDIO | Love FREE PLUGGING include on all Package ";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: white;
-    top: 151px;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #724a59;
-    overflow: hidden;
-    /* z-index: 2000; */
-}
-.img_slicex::after{
-    content: "FL STUDIO | Slicex FREE PLUGGING include on all Package ";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: white;
-    top: 151px;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #89457a;
-    overflow: hidden;
-   
-}
-.img_love:hover::after{
-    height: 100%;
-    transition: 0.4s ;
-    border-radius: 0px 0px 5px 5px ;
-    
-}
-.img_love:hover{
-    box-shadow: 1px 1px 23px 1px #724a59;
-    transition: 0.4s ;
-    
-    
-}
-.img_flkey:hover::after{
-    height: 100%;
-    transition: 0.4s ;
-    border-radius: 0px 0px 5px 5px ;
-}
-.img_flkey:hover{ 
-    box-shadow: 1px 1px 23px 1px rgb(76 72 140);
-    transition: 0.4s ;
-}
-.img_slicex:hover::after{
-    height: 100%;
-    transition: 0.4s ;
-    border-radius: 0px 0px 5px 5px ;
-}
-.img_slicex:hover{
-
-    box-shadow: 1px 1px 23px 1px #89457a;
-    transition: 0.4s ;
-
-}
-/* ============================================================ */
-.Daw{
-    background-color: white;
-    /* z-index: 2000; */
-}
-.pourLesMusicien{
-    width:300px;
-    height: 100%;
-}
-.compositeur{
-    width:300px;
-    height: 100%;
-}
-img#logo_acceuil{
-height: 55px;
-}
-.colorOrange{
-color:#ff7629;
-background:white;
-
-}
-/* ================================================================================ */
-
-.card_catalogue{
-    box-shadow:1px 1px 13px 0px #ff7629;
-    height:354px ;
-    width:268px;
-    background:#ff7629;
-}
-
-/* ============================================ */
-
-
-span#EM6 {
-}
-span[data-em="EM6"]{
-    background:white;
-    font-size:xxx-large;
-
-}
-/* .image>span {
-    font-size: 1em;
+/* .fs-6:hover{
+    color: orange;
 } */
-
-
-/* .test1:hover  {
-position: relative;
-} */
-/* .test1::after {
-    content: "";
-    position: absolute;
-    top:50%;
-    left:50%;
-    opacity: 0.5;
-    transform: translate(-50% ,-50%);
-    width: 100%;
-    height: 100%;
+article img#img1:hover {
+    cursor: pointer;
     background: #000;
-}  */
-
-/* .test2 {
-    position: relative;
-
-}
-
-.test2:hover {
-    filter: blur(1px);
-
-} */
-nav.navbar{
-    width: 100%;
-background-color: #16182c;
-position: sticky;
-z-index: 2000;
-}
-
-/* ====================FOOTER============================== */
-
-.footer{
- position:relative;  
- display: flex;
- justify-content: center;
- align-items: center;
- bottom: 0;
- width: 100%;
- color: white;
-    height: 200px;
-    background-color: black;
-}
-.piano-roll{
-width: 350px;
 }
