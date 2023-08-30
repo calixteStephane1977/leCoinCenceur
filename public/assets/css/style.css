@@ -243,7 +243,7 @@ span.survol{
     display: flex;
     justify-content: space-around;
     margin:0 auto;
-    height: 400vh;
+    height: 500vh;
 
 }
 
@@ -384,7 +384,7 @@ height: 55px;
 }
 .colorOrange{
 color:#ff7629;
-background:white;
+/* background:white; */
 
 }
 /* ================================================================================ */
