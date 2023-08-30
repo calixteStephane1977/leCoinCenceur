@@ -6,16 +6,31 @@
         {% block stylesheets %}
             <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+            <link rel="icon" type="image/x-icon" href="images/products/fl-studio-logo.webp">
             {# <link href="{{ asset('assets/css/all.min.css') }}" rel="stylesheet"> #}
             <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+            
+            <link href="{{ asset('assets/css/animationAcceuil.css') }}" rel="stylesheet">
         {% endblock %}
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js" integrity="sha512-VhCNuqzYKIhOU4i+EWPomIQu3AJ8Q2HmuemubIOUHd6m6ohnHynRxBp8Jl/f8xmVEPiKtpKWuacuBeh49SBfCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         {% block javascripts %}
             <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+            <script src="{{ asset('assets/js/animation.js') }}"></script>
+            <script src="{{ asset('assets/js/gsap.core.js') }}"></script>
+
+<!--
+MorphSVGPlugin.min.js, and SplitText.min.js are Club GreenSock perks which are not available on a CDN. Download them from your GreenSock account and include them locally like this:
+
+<script src="/[YOUR_DIRECTORY]/MorphSVGPlugin.min.js"></script>
+<script src="/[YOUR_DIRECTORY]/SplitText.min.js"></script>
+
+Sign up at https://greensock.com/club or try them for free on CodePen or CodeSandbox
+-->
         {% endblock %}
         {% block jsStripe %}{% endblock %}
     </head>
-    <body style="background:#16182c"  class=" h-100 ">
+    <body style="background:#16182c"  class="">
         {% block menu %}
             {% include "menu.html.twig" %}
         {% endblock %}
@@ -26,7 +41,7 @@
         {# <h6 class="rounded border border-dark bg-info p-2 m-2 text-center ">
             {% block subtitle %} Produits Images-Line{% endblock %}
         </h6> #}
-        <div class="container mx-auto fs-6 page-container ">
+        <div class="container mx-auto fs-6 page-container h-100">
             {% block body %}
             {%include "acceuil.html.twig"%}
             
@@ -34,7 +49,7 @@
             {% endblock %}
         </div>
         {% block footer %}
-            <footer class="col-12 foot position-fixed  bottom-0">
+            <footer class="footer">
                 <p class="m-0 p-0">
                     &copy; 1912-2023 Compagnie d'arc Jeanne Hachette-Beauvais<br>
                     <small>La plus prestigieuse des compagnies des archers en France</small>
