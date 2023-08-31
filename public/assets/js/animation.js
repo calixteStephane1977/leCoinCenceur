@@ -1,6 +1,6 @@
-const article = document.getElementsByTagName("p")
+// const article = document.getElementsByTagName("p")
 
-const textDisplay =document.getElementsByClassName('ecrit.text-white');
+const textDisplay =document.querySelector('span.para');
 console.log(textDisplay);
 const phrase =['Hello,my name is Ania.','I love to code.','I love to teach code.']
 console.log(phrase);
@@ -8,10 +8,10 @@ let i=0;
 let j=0;
 let currentPhrase=[];
 function loop(){
-    textDisplay.innerHTML=currentPhrase.join(" ");
     if(i<phrase.length){
         if(j<=phrase[i].length){
             console.log(phrase[i][j]);
+            textDisplay.push(phrase[i][j])
             currentPhrase.push(phrase[i][j])
             j++
         }
@@ -20,6 +20,7 @@ function loop(){
             i++
         }
     }
+    textDisplay.innerHTML=currentPhrase.join(" ");
     setTimeout(loop, 500)
 }
 loop();
